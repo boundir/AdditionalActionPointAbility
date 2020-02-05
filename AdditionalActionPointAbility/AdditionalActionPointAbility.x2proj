@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>d28250ef-b99b-4ff6-b74c-3ff574e42e0d</Guid>
+    <Name>AdditionalActionPointAbility</Name>
+    <Description>Description of My XCOM 2 Mod.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>AdditionalActionPointAbility</AssemblyName>
+    <RootNamespace>AdditionalActionPointAbility</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\AdditionalActionPointAbility\" />
+    <Folder Include="Src\AdditionalActionPointAbility\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComAdditionActionPoint.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\AdditionalActionPointAbility\Classes\X2Ability_AdditionalAP.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\AdditionalActionPointAbility\Classes\X2DownloadableContentInfo_AdditionalActionPointAbility.uc" />
+    <Content Include="Src\AdditionalActionPointAbility\Classes\X2Effect_AdditionalAP.uc">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
